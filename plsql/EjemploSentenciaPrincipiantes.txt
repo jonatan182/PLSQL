@@ -1,0 +1,11 @@
+select * from all_tables
+
+begin
+   dbms_output.put_line('Hola Mundo');
+end;
+select iddoctor,(nombres||' '||apellidos)as Nombre, especialidad from doctor --Para concatenar dos columas en plsql se hace con el operador "||" y con as para el alias
+select iddoctor, nombres||' '||apellidos Nombre, especialidad from doctor --Para concatenar dos columas en plsql se hace con el operador "||" y también se puede sin as
+
+select nvl(:p1, 1)from dual --sentencia plsql que permite sustituir valores  nulos por una cadena, es este caso si el valor es nulo se sustituirá por "1", "p1" es el nombre puede ir    --cualquiera
+select nvl(:p1, nombres)from doctor 
+select decode(:p1,'CO','Colombia','Internacional')from doctor --sentencia plsql que permite hacer como una especie de condición, en donde si el parámetro ":p1" el que recibimos es "CO", --devuelve "Colombia", pero si el parámetro recibido no es "CO" entonces devuelve "Internacional" 

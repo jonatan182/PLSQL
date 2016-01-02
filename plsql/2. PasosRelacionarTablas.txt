@@ -1,0 +1,20 @@
+1)hay dos forma de relacionar las tablas la primera es por script a punta de codigo, y la segunda es por la interface
+ * por script en el momento de estar creando las tabla: foreign key (idCurso) references curso(idCurso)
+ * cuando ya tenemos creadas las tablas pero no estan relacionadas tenemos que alterrar la tabla y relacionarlas,
+   se hace de esta manera:
+   ALTER TABLE tabla_A_Modificar ADD CONSTRAINT nombre_cualquiera
+   FOREIGN KEY(campo) REFERENCES tablaSecundaria(campo)
+
+   ALTER TABLE FAC_PRODUCTO ADD CONSTRAINT FK_FAC_PRODUCTO_PROVEEDOR
+   FOREIGN KEY(ID_PROVEEDOR) REFERENCES FAC_PROVEEDOR(ID_PROVEEDOR).
+2)por el asistente de sql developer se hace de la siguiente forma:
+  1)Dar click derecho a la tabla que queremos hacer la relacion, esta sera la tabla muchos la que contendra el combobox si fuece en java.
+  2)Dar click en editar
+  3)Dar click en la opcion de restricciones
+  4)Dar clik en el icono de agregar "+" que esta de color verde y se desprenden varias opciones
+  5)seleccionar la opcion nueva clave ajena restriccion
+  6)En el apartado de Restriccion de referencia seleccionar lo siguiente
+  7)en la opcion de esquema tiene que estar seleccionado el squema, si no lo esta lo seleecionamos, el esquema en muchos casos es el nombre de la conexion
+  8)en la opcion de tabla escojemos la tabla con la que va a estar relacionada esta, 
+  9)en la opcion de restriccion seleccionar la que esta, la que se carga luego de escojer la opcion de tabla.
+  10)aceptar.

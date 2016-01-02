@@ -1,0 +1,25 @@
+----------creacion de la base de datos-----------------
+
+1)ingresar al acceso directo de  Get Started With Oracle Database 11g Express Edition 
+2)ingresar al item o pestaña Aplication Express
+3)indicamos username y password de conexion por defecto que en muchos casos es system, lo podemos averiguar dirijiendonos al acceso directo
+  Oracle SQL Developer y ver las propiedades de la conexion principal
+4)indicar en el radioButton create new, luego indicamos un nombre para la bd, un usuario y password 
+5)oprimir en el botton createWorkSpace y listo luego procedemos a lo siguiente para la creacion de las tablas
+
+---------creacion de las tablas---------------------------
+-------podemos hacerlo desde la herramienta Oracle SQL Developer-----
+
+6)dirijirnos al  acceso directo de Oracle SQL Developer y dar en + "crear nueva conexion", 
+  indicamos nombre de la conexion puede ser cualquiera, luego el usuario que es el mismo que indicamos para el nombre de la bd en el getStarted, y por ultimo el password
+7)damos en probar, esperamos que este correcto y luego en conectar.
+8) se nos abre el espacio de trabajo y en este procedemos a crear las tablas con instrucciones sql o con el asistente dando click en tablas y luego Nueva Tabla
+   indicando el nombre de la tabla, con el icono "+" de color verde agregamos un nuevo campo, y danclock en la parte de PK escojemos la llave primaria.
+
+-------podemos hacerlo desde la herramienta Run SQL Command Line que es por consola-----
+6)dirijirnos al acceso directo Run SQL Command Line y ingresar el siguiente comando CONN nombre_baseDatos/password
+7)damos enter y una vez tiene que aparecer Connected
+8)ya podemos ingresa instrucciones sql para la creacion modificacion y eliminacion de tablas ddl, dml
+
+-------podemos hacerlo desde Get Started With Oracle Database 11g Express Edition 
+9)en la opcion de sql  Workshop, elegir la opcion SQL Commands, por codigo crear las tablas
